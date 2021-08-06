@@ -2,7 +2,7 @@ FROM ubuntu/nginx
 
 RUN apt-get update
 
-RUN apt-get install -y openssh-server openjdk-11-jdk less
+RUN apt-get install -y openssh-server rsync openjdk-11-jdk less
 RUN mkdir /var/run/sshd 
 EXPOSE 22
 RUN \
